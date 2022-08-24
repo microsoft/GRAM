@@ -134,7 +134,7 @@ If you have any questions, please contact Yu Deng (dengyu2008@hotmail.com) and J
 
 Copyright &copy; Microsoft Corporation.
 
-Licensed under the [Microsoft Research license](https://github.com/microsoft/GRAM/blob/master/files/GRAM-Microsoft%20Research%20License%20Agreement.pdf).
+Licensed under the [Microsoft Research license](https://github.com/microsoft/GRAM/blob/main/LICENSE).
 
 ## Citation
 
