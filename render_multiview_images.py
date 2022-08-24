@@ -28,7 +28,7 @@ if __name__ == '__main__':
     parser.add_argument('--seeds', type=parse_idx_range, default='0-19')
     parser.add_argument('--frames', type=str, default=30)
     parser.add_argument('--psi', type=str, default=0.7)
-    parser.add_argument('--no_watermark', default=False, help='False to eliminate watermarks. default=True.', action='store_true')
+    parser.add_argument('--no_watermark', default=False, help='True to eliminate watermarks. default=False.', action='store_true')
     opt = parser.parse_args()
 
     config = getattr(configs, opt.config)
