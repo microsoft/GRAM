@@ -64,7 +64,7 @@ if __name__ == '__main__':
     parser.add_argument('--config', type=str, default='FFHQ_default')
     parser.add_argument('--num_real_images', type=int, default=8000)
     parser.add_argument('--num_images', type=int, default=1000)
-    parser.add_argument('--no_watermark', default=False, help='False to eliminate watermarks. default=True.', action='store_true')
+    parser.add_argument('--no_watermark', default=True, help='True to eliminate watermarks. default=True.', action='store_true')
     opt = parser.parse_args()
 
     config = getattr(configs, opt.config)
