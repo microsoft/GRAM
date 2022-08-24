@@ -141,9 +141,9 @@ Please cite the following paper if this work helps your research:
 
     @inproceedings{deng2022gram,
 		title={GRAM: Generative Radiance Manifolds for 3D-Aware Image Generation},
-    	author={Deng, Yu and Yang, Jiaolong and Xiang, Jianfeng and Tong, Xin},
-	    booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-	    year={2022}
+		author={Deng, Yu and Yang, Jiaolong and Xiang, Jianfeng and Tong, Xin},
+		booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+		year={2022}
 	}
 
 ## Contact
