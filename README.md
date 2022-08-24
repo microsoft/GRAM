@@ -114,7 +114,7 @@ The following table lists training times for different configs using 8 NVIDIA Te
 |CATS_default | 256x256 | 80k | 16 | 4d 6h |
 |CARLA_default | 128x128 | 70k | 32 | 3d 15h |
 
-Training GRAM under 256x256 image resolution requires around 30GB memory for a typical forward-backward cycle with a batchsize of 1 using Pytorch Automatic Mixed Precision. To enable training using GPUs with limited memory, we provide an alternative way using patch-level forward and backward process (see [here](https://github.com/Microsoft/GRAM/blob/main/images/patch_process.pdf) for a detailed explanation):
+Training GRAM under 256x256 image resolution requires around 30GB memory for a typical forward-backward cycle with a batchsize of 1 using Pytorch Automatic Mixed Precision. To enable training using GPUs with limited memory, we provide an alternative way using patch-level forward and backward process (see [here](https://github.com/microsoft/GRAM/blob/main/images/patch_process.pdf) for a detailed explanation):
 ```
 python train.py --config=<CONFIG_NAME> --output_dir=<OUTPUT_FOLDER> --patch_split=<NUMBER_OF_PATCHES> 
 ```
