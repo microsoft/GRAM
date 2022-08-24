@@ -26,16 +26,16 @@ conda env create -f environment.yml
 source activate gram
 ```
 
-Alternatively, we provide a [Dockerfile](https://github.com/YuDeng/Generative-Radiance-Manifolds/blob/main/Dockerfile) to build an image with the required dependencies.
+Alternatively, we provide a [Dockerfile](https://github.com/microsoft/GRAM/blob/main/Dockerfile) to build an image with the required dependencies.
 
 ## Pre-trained models
 Checkpoints for pre-trained models used in our paper (default settings) are as follows.
 
 |Dataset|Config|Resolution|Training iterations|Batchsize|FID 20k|KID 20k (x100)|Download|
 |:----:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
-|FFHQ | FFHQ_default |256x256 |  150k | 32 | 14.5 | 0.65 | [Github link](https://github.com/YuDeng/GRAM_test/tree/main/pretrained_models/FFHQ_default) |
-|Cats | CATS_default |256x256 |  80k | 16 |14.6 | 0.75 | [Github link](https://github.com/YuDeng/GRAM_test/tree/main/pretrained_models/CATS_default) |
-|CARLA | CARLA_default |128x128 |  70k | 32 | 26.3 | 1.15 | [Github link](https://github.com/YuDeng/GRAM_test/tree/main/pretrained_models/CARLA_default) |
+|FFHQ | FFHQ_default |256x256 |  150k | 32 | 14.5 | 0.65 | [Github link](https://github.com/microsoft/GRAM/tree/main/pretrained_models/FFHQ_default) |
+|Cats | CATS_default |256x256 |  80k | 16 |14.6 | 0.75 | [Github link](https://github.com/microsoft/GRAM/tree/main/pretrained_models/CATS_default) |
+|CARLA | CARLA_default |128x128 |  70k | 32 | 26.3 | 1.15 | [Github link](https://github.com/microsoft/GRAM/tree/main/pretrained_models/CARLA_default) |
 
 ## Generating multi-view images with pre-trained models
 Run the following script to render multi-view images of generated subjects using a pre-trained model:
@@ -114,7 +114,7 @@ The following table lists training times for different configs using 8 NVIDIA Te
 |CATS_default | 256x256 | 80k | 16 | 4d 6h |
 |CARLA_default | 128x128 | 70k | 32 | 3d 15h |
 
-Training GRAM under 256x256 image resolution requires around 30GB memory for a typical forward-backward cycle with a batchsize of 1 using Pytorch Automatic Mixed Precision. To enable training using GPUs with limited memory, we provide an alternative way using patch-level forward and backward process (see [here](https://github.com/YuDeng/Generative-Radiance-Manifolds/blob/main/images/patch_process.pdf) for a detailed explanation):
+Training GRAM under 256x256 image resolution requires around 30GB memory for a typical forward-backward cycle with a batchsize of 1 using Pytorch Automatic Mixed Precision. To enable training using GPUs with limited memory, we provide an alternative way using patch-level forward and backward process (see [here](https://github.com/Microsoft/GRAM/blob/main/images/patch_process.pdf) for a detailed explanation):
 ```
 python train.py --config=<CONFIG_NAME> --output_dir=<OUTPUT_FOLDER> --patch_split=<NUMBER_OF_PATCHES> 
 ```
@@ -134,7 +134,7 @@ If you have any questions, please contact Yu Deng (dengyu2008@hotmail.com) and J
 
 Copyright &copy; Microsoft Corporation.
 
-Licensed under the [Microsoft Research license](https://github.com/YuDeng/GRAM/blob/master/files/GRAM-Microsoft%20Research%20License%20Agreement.pdf).
+Licensed under the [Microsoft Research license](https://github.com/microsoft/GRAM/blob/master/files/GRAM-Microsoft%20Research%20License%20Agreement.pdf).
 
 ## Citation
 
