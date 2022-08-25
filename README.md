@@ -151,3 +151,4 @@ If you have any questions, please contact Yu Deng (dengyu2008@hotmail.com) and J
 
 ## Acknowledgements
 We thank Harry Shum for the fruitful advice and discussion to improve the paper. This implementation takes [pi-GAN](https://github.com/marcoamonteiro/pi-GAN) as a reference. We thank the authors for their excellent work. 
+
